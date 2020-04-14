@@ -1,0 +1,131 @@
+@media screen and (max-width: 1024px) {
+  .hero{
+    position: relative;
+    overflow: hidden;
+    padding: 2em 0;
+  }
+  .hero__img{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  h1{
+    z-index: 2;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .projects__project{
+    display: block;
+    text-align: center;
+  }
+  .projects__project h3{
+    text-align: left;
+  }
+  .projects__project--img{
+    width: auto;
+    margin-top: 20px;
+  }
+  .projects__project--description{
+    width: auto;
+  }
+  .experience__item{
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero{
+    justify-content: center;
+  }
+  .hero__title{
+    margin-bottom: 20px;
+    font-size: 2.3em;
+    text-align: center;
+    margin-left: 0;
+  }
+  .projects__project--description{
+    font-size: 16px;
+  }
+  .decription__title{
+    font-size: 1.5em;
+  }
+  .decription__course{
+    font-size: 1.2em;
+  }
+  .decription__date{
+    font-size: 1em;
+  }
+  .decription__url{
+    font-size: 1em;
+  }
+  .decription__detail{
+    font-size: .8em;
+  }
+  .experience__item{
+    font-size: 12px;
+  }
+  .social{
+    margin-top: 20px;
+  }
+  .description input{
+    padding: 15px 30px;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+  }
+  .curso{
+    display: block;
+    text-align: center;
+  }
+  .header{
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .nav{
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(250,220,44,.9);
+    top: 0;
+    left: -100vw;
+    z-index: 3;
+    transition: 1s;
+  }
+  .nav.activate{
+    left:0;
+  }
+  .nav a{
+    margin: 20px 80px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .burger-button{
+    display: block;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero{
+    justify-content: center;
+  }
+  .hero__title{
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+    margin-left: 0;
+  }
+  .hero__img{
+    width: 100vw;
+  }
+  .decription p{
+    text-align: left;
+  }
+}

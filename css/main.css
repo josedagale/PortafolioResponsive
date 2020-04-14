@@ -1,0 +1,325 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?rjo76b');
+  src:  url('fonts/icomoon.eot?rjo76b#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?rjo76b') format('truetype'),
+    url('../fonts/icomoon.woff?rjo76b') format('woff'),
+    url('../fonts/icomoon.svg?rjo76b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+:root{
+  /* colores */
+  --black-color: #1b2127;
+  --blue-color: #39C5EE;
+  --pink-color: #E72492;
+  --yelow-color: #FADC2E;
+  --grey-color: #E3E3E3;
+
+  /* font */
+  --open-font: 'Open Sans', sans-serif;
+  --oswald-font: 'Oswald', sans-serif;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--open-font);
+}
+
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  z-index: 4;
+  color: white;
+  font-size: 20px;
+}
+.container{
+  max-width: 1000px;
+  margin: auto;
+}
+.header{
+  background: var(--black-color);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.header img{
+  width: 100px;
+}
+.nav a{
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.nav a:hover{
+  text-decoration: underline;
+}
+
+/* hero section */
+
+.hero{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--black-color);
+}
+.hero__title{
+  color: white;
+  margin-left: 30px;
+  font-family: var(--oswald-font);
+  font-size: 2.8em;
+}
+.hero__title span{
+  color: var(--blue-color);
+}
+
+
+/* projects sections */
+
+.projects{
+  padding: 20px;
+  flex-flow: row wrap;
+}
+.projects h2{
+  margin: 30px 0;
+  font-family: var(--oswald-font);
+  color: var(--blue-color);
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.projects__project{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--grey-color);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 2px var(--grey-color);
+  margin-bottom: 20px;
+
+}
+.projects__project--description{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.projects__project--description p{
+  text-align: justify;
+}
+.projects__project--img{
+  width: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.projects__project--img img{
+  max-width: 100%;
+}
+.decription{
+  margin-bottom: 30px;
+}
+.decription h3{
+  font-family: var(--oswald-font);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.decription p{
+  font-size: .8em;
+}
+
+
+/* section experience */
+
+.experience{
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.experience h2{
+  width: 100%;
+  margin-bottom: 40px;
+  font-family: var(--oswald-font);
+  color: var(--yelow-color);
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.experience__item{
+  width: 49%;
+  background: var(--yelow-color);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.details__title{
+  font-size: 2em;
+}
+.details__description{
+  font-size: 1em;
+}
+.experience__item--img{
+  width: 100%;
+}
+.experience__item--details{
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  margin-top: -40px;
+}
+.experience__item--details h3{
+  margin-bottom: 20px;
+}
+.experience__item--details button{
+  padding: 10px 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--blue-color);
+  background: transparent;
+  color: var(--blue-color);
+  cursor: pointer;
+}
+.video-container{
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+.youtube-video{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* social section */
+
+.contact{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--pink-color);
+  padding: 20px;
+  color: white;
+  font-family: var(--oswald-font);
+}
+.description{
+  display: flex;
+  flex-flow: column wrap;
+}
+.description h3{
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.description input{
+  background-image: url("../img/envelope.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: 5px;
+  background-position-y: center;
+  padding: 5px 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.description button{
+  padding: 10px 0;
+  margin: 0 40px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.social-link{
+  height: 50px;
+  width: 50px;
+  background-size: 50px 50px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.twitter{
+  background-image: url("../img/twitter.svg");
+}
+.facebook{
+  background-image: url("../img/facebook.svg");
+}
+.github{
+  background-image: url("../img/github.svg");
+}
+.instagram{
+  background-image: url("../img/instagram.svg");
+}
+
+
+/* footer section */
+
+.footer{
+  background-color: var(--black-color);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.curso{
+  display: flex;
+  align-items: center;
+}
+.curso img{
+  width: 100px;
+  margin-left: 20px;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
